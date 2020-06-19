@@ -6,6 +6,7 @@ const mdbConn = require('../mariadb/database.js');
 /* GET group */
 router.get('/', function(req, res, next) {
 
+  console.log('group ...');
   mdbConn.getGroup()
   .then((rows) => {
     console.log(rows);
