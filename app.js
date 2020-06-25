@@ -5,11 +5,10 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 const cors = require('cors');
-const net_client = require('./net/client.js');
-
-// qpp.use(bodyParser.urlencoded({extended: false}))
-
-
+//const net_client = require('./net/client.js');
+//const net_client = require('./net/tcpClient');
+//const net_client = require('./net/clsTcpClient');
+const net_client = require('./net/clsTcpClient');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

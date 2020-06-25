@@ -20,6 +20,7 @@ client.on('error', function() {
 	console.log('error');
 });
 
+// send Fin packet event
 client.on('end', function() {
     console.log('Requested an end to the TCP connection');
 });
