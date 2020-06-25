@@ -8,7 +8,8 @@ const cors = require('cors');
 //const net_client = require('./net/client.js');
 //const net_client = require('./net/tcpClient');
 //const net_client = require('./net/clsTcpClient');
-const net_client = require('./net/clsEchoTcpClient');
+//const net_client = require('./net/clsEchoTcpClient');
+const net_client = require('./net/clsTcpClient');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
