@@ -62,7 +62,7 @@ class TcpClient{
                 arrData.push(dataInfo);                
             }
             console.log(arrData);
-
+            pcaketHandle.rxHandler(arrData);
         });
 
         // Connection end event (send fin packet)

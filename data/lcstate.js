@@ -22,8 +22,20 @@ let Lc_state = {
 	conflictSt: 0,      // 모순상태
 	lightOffSt: 0,      // 소등상태
 	flashSt: 0,         // 점멸상태
-	doorSt: 0           // 도어 열림 상태
+	doorSt: 0,          // 도어 열림 상태
+	commSt: 0			// 통신상태	
 };
+
+//제어기 별 상태
+let LcStates = {
+	count: 0,
+	state:[		
+		{id: 0,
+		grp: 0,
+		state: Lc_state
+		}
+	]
+}
 
 //module.exports = Lc_state;
 
@@ -34,6 +46,7 @@ let connectionStatus = {
 
 
 module.exports = {
-    Lc_state: Lc_state,
+	Lc_state: Lc_state,
+	LcStates: LcStates,
     connectionStatus: connectionStatus
 }
